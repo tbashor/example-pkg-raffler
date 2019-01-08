@@ -62,7 +62,7 @@
     "mocha": "^5.2.0",
     "supertest": "^3.3.0"
   },
-  "license": "MITpk",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/sd-sea-lions-2016/js-raffler/tree/develop"
