@@ -54,8 +54,7 @@
     "twilio": "^3.26.1",
     "loopback-component-explorer": "^2.1.0"
   },
-  "optionalDependencies": {
-  },
+  "optionalDependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
     "jshint": "^2.9.7",
