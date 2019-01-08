@@ -1,0 +1,70 @@
+{
+  "name": "sdjs-raffler",
+  "version": "0.1.0",
+  "main": "server/server.js",
+  "bin": "server/server.js",
+  "scripts": {
+    "pretest": "jshint .",
+    "start": "node .",
+    "test": "mocha test/*test.js",
+    "pkg": "pkg . --out-path ./dist --debug"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/loopback/favicon.ico",
+      "common/**/**",
+      "server/datasources.local.js",
+      "server/*.json",
+      "server/boot/*.js",
+      "client/**/**",
+      "node_modules/loopback-boot/lib/plugins/*.js",
+      "node_modules/loopback-connector-remote/node_modules/loopback-connector/intl/**/*.json",
+      "node_modules/loopback/server/middleware/*.js",
+      "node_modules/strong-remoting/node_modules/strong-error-handler/views/style.css",
+      "node_modules/strong-remoting/node_modules/strong-error-handler/views/default-error.ejs",
+      "node_modules/strong-remoting/node_modules/strong-error-handler/intl/**/*.json",
+      "node_modules/strong-remoting/intl/**/*.json",
+      "node_modules/loopback/node_modules/loopback-connector/intl/**/*.json",
+      "node_modules/loopback/node_modules/loopback-datasource-juggler/intl/**/*.json",
+      "node_modules/loopback/intl/**/*.json",
+      "node_modules/loopback-phase/intl/**/*.json",
+      "node_modules/loopback-boot/intl/**/*.json",
+      "node_modules/strong-globalize/cldr/**.json"
+    ],
+    "scripts": [],
+    "targets": [
+      "node10-macos-x64",
+      "node10-win-x86"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.0",
+    "kerberos": "^1.1.2",
+    "loopback": "^3.24.0",
+    "loopback-boot": "^3.2.0",
+    "loopback-connector-mongodb": "^3.9.2",
+    "loopback-connector-sqlite3": "^3.0.0",
+    "mock": "^0.1.1",
+    "mongodb": "^3.1.10",
+    "serve-favicon": "^2.5.0",
+    "strong-error-handler": "^1.0.1",
+    "twilio": "^3.26.1",
+    "loopback-component-explorer": "^2.1.0"
+  },
+  "optionalDependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jshint": "^2.9.7",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "license": "MITpk",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sd-sea-lions-2016/js-raffler/tree/develop"
+  }
+}

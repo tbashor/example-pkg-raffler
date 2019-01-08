@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script src="application.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>JS Raffler</title>
+  </head>
+  <body>
+
+    <h1>Raffle Registration</h1>
+
+    <% if (raffle) { %>
+
+      <div id="public-registration-status">
+      </div>
+
+      <div id="public-registration-container" class="login">
+      <div class="login-triangle"></div>
+        <h2 class="login-header">Register for Raffle</h2>
+        <form  class="login-container" id="public-registration-form" action="api/raffles/<%= raffle.id %>/entrants" method="post">
+          <p><input type="text" placeholder="Name" name="username" autofocus required></p>
+          <p><input type="submit" name="new-username-submit" value="Register"></p>
+        </form>
+      </div>
+    <% } else { %>
+      <p class="login-header">Sorry, there are no open raffles. Try again later.</p>
+    <% } %>
+
+  </body>
+</html>

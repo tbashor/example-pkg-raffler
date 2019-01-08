@@ -1,0 +1,8 @@
+{
+  "db": {
+    "name": "db",
+    "localStorage": "raffler",
+    "file": "raffler.json",
+    "connector": "memory"
+  }
+}

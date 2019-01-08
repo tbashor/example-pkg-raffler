@@ -1,0 +1,29 @@
+{
+  "name": "raffle",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "date": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "ownerId"
+    },
+    "entrants": {
+      "type": "embedsMany",
+      "model": "entrant"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
