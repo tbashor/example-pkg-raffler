@@ -10,5 +10,12 @@ register for and participate in a raffle. The Twilio integration built into the 
 4. To run the binary on MacOS, `cd` to the `dist` directory and run `./example-pkg-raffler-macos-x64`.
 5. Open a browser to [http://localhost:3000](http://localhost:3000).
 
+## Original Sizes
+- Node Mac x64 binary = 37.6 MB
+- Repo with modules = 80.1 MB
 
+## Compiled Size
+- Mac x64 compiled app = 99.4 MB
 
+## Savings
+Over 15%
