@@ -7,7 +7,7 @@ register for and participate in a raffle. The Twilio integration built into the 
 1. Run `npm install -g pkg`.
 2. Run `npm install`.
 3. Run `npm run pkg`. This will generate 2 binary files (MacOS and Windows) in the `dist` directory.
-4. To run the binary on MacOS, `cd` to the `dist` directory and run `./example-pkg-raffler-macos-x64`.
+4. To run the binary on MacOS, `cd` to the `dist` directory and run `./sdjs-raffer-macos-x64`.
 5. Open a browser to [http://localhost:3000](http://localhost:3000).
 
 ## Original Sizes
